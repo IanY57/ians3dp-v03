@@ -1,3 +1,15 @@
 import React from "react"
+// import { Link } from "gatsby"
 
-export default () => <div>Hello world!</div>
+// import { FaAdobe } from "react-icons/fa"
+import Layout from "../components/Layout"
+
+const index = () => {
+  return (
+    <Layout>
+      <div>Hello from Ians3DP</div>
+    </Layout>
+  )
+}
+
+export default index

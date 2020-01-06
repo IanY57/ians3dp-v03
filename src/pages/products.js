@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
 
-const errorPage = () => {
+const products = () => {
   return (
     <Layout>
-      <h2>opps dead end</h2>
-      <Link to="/">return home</Link>
+      <h2>Hi from Products page</h2>
+      <Link to="/">Return Home</Link>
     </Layout>
   )
 }
 
-export default errorPage
+export default products
