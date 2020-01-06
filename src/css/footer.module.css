@@ -29,7 +29,7 @@
   color: var(--primaryColor);
 }
 .copyright {
-  text-transform: capitalize;
+  text-transform: lowercase;
   letter-spacing: var(--mainSpacing);
   line-height: 2;
 }
