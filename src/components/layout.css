@@ -40,7 +40,7 @@ p {
   margin-bottom: 1.25rem;
 }
 .simpleHero {
-  min-height: calc(100vh - 62px);
+  min-height: calc(50vh - 62px);
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/home.jpg") center/cover no-repeat;
   display: flex;
@@ -49,6 +49,7 @@ p {
 }
 .btn-white,
 .btn-primary {
+  font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
