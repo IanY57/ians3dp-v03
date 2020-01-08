@@ -4,20 +4,19 @@ import { FaWallet, FaTree, FaSocks } from "react-icons/fa"
 export default [
   {
     icon: <FaWallet />,
-    title: "saving money",
+    title: "Personalised Gifts",
     text:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, earum. ",
+      "Get that special person a personalised gift that means so much more. ",
   },
   {
     icon: <FaTree />,
-    title: "endless hiking",
-    text:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, earum. ",
+    title: "Promotional Items",
+    text: "Looking for an affordable way of promoting you small bussiness. ",
   },
   {
     icon: <FaSocks />,
-    title: "amazing comfort",
+    title: "Printing on Demand",
     text:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, earum. ",
+      "Designed a prototype for a School or Uni project that needs to be made real.",
   },
 ]

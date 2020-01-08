@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import SimpleHero from "../components/SimpleHero"
 import Banner from "../components/Banner"
 import About from "../components/home/About"
+import Services from "../components/home/Services"
 
 const index = () => {
   return (
@@ -19,6 +20,7 @@ const index = () => {
           </Link>
         </Banner>
       </SimpleHero>
+      <Services />
       <About />
     </Layout>
   )
