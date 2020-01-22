@@ -21,9 +21,9 @@ const index = ({ data }) => {
           </Link>
         </Banner>
       </StyledHero>
+      <About />
 
       <Services />
-      <About />
     </Layout>
   )
 }
