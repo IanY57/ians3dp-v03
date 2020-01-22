@@ -1,16 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SimpleHero from "../components/SimpleHero"
+
 import Banner from "../components/Banner"
 import About from "../components/home/About"
 import Services from "../components/home/Services"
+import StyledHero from "../components/StyledHero"
 
-const index = () => {
+const index = ({ data }) => {
   return (
     <Layout>
-      <SimpleHero>
+      <StyledHero home="true" img={data.defaultHome.childImageSharp.fluid}>
         <Banner
           title="Ian's 3D Printing Service"
           info="Put something about FDM style printing"
@@ -19,11 +20,24 @@ const index = () => {
             explore products
           </Link>
         </Banner>
-      </SimpleHero>
+      </StyledHero>
+
       <Services />
       <About />
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    defaultHome: file(relativePath: { eq: "home.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
 
 export default index
