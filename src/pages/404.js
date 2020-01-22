@@ -1,23 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import StyledHero from "../components/StyledHero"
 
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 
-import styles from "../css/error.module.css"
+//import styles from "../css/error.module.css"
 
-const errorPage = () => {
+const errorPage = ({ data }) => {
   return (
     <Layout>
-      <header className={styles.error}>
-        <Banner title="something has gone wrong">
+      <StyledHero home="true" img={data.defaultHome.childImageSharp.fluid}>
+        <Banner
+          title="Somthing has gone horribly wrong"
+          info="I cannot find your page"
+        >
           <Link to="/" className="btn-white">
-            return to home page
+            Returun Home
           </Link>
         </Banner>
-      </header>
+      </StyledHero>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    defaultHome: file(relativePath: { eq: "home.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
 
 export default errorPage

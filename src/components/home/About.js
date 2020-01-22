@@ -35,14 +35,14 @@ const About = () => {
         </article>
         <article className={styles.aboutInfo}>
           <h4>Welcome to Ian's 3D Printing Service</h4>
-          <p>
+          <h5>
             As you can see this site is very much under construction, Please
             call back soon to see the progression.
-          </p>
-          <p>
+          </h5>
+          <h5>
             The site is being build with Gatsbyjs using Udemy.com and a course
             by: John Smilga
-          </p>
+          </h5>
           <button type="button" className="btn-primary">
             read more
           </button>
