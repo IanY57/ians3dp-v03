@@ -10,7 +10,7 @@ const Contact = () => {
         <div className={styles.center}>
           <form
             className={styles.form}
-            action="https://airform.io/sales@ians3dp.com.au"
+            action="https://formspree.io/sales@ians3dp.com.au"
             method="POST"
           >
             <div>
